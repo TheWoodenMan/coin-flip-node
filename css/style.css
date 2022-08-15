@@ -3,15 +3,48 @@
 /*******************************************/
 
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
+  font-family: "Play", Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: darkblue;
+  color: gold;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+#wrapper {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+button {
+  padding: 5%;
+  font-size: 5rem;
+}
+
+span {
+  font-size: 3rem;
+}
+
+#results {
+  font-size: 5rem;
+  text-align: center;
+  width: 50%;
+  padding: 0 0 0 50%;
+  height: 50vh;
+}
+
+#message {
+}
 
 /******************************************
 /* ADDITIONAL STYLES
