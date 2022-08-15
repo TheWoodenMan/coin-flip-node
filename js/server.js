@@ -1,9 +1,12 @@
 // const fetch = require("node-fetch");
 
+const express = require("express");
+const app = express();
+
 const fs = require("fs");
 const http = require("http");
 const url = require("url");
-const hostname = "127.0.0.1";
+const hostname = "localhost";
 const port = 8000;
 const querystring = require("querystring");
 // const figlet = require("figlet");
@@ -117,6 +120,6 @@ const server = http.createServer((req, res) => {
 //   }
 // });
 
-server.listen(port, hostname, () => {
+app.listen(port, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
